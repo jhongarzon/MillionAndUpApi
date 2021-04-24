@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Bogus;
+using Microsoft.EntityFrameworkCore;
 using System;
+using static System.Linq.Enumerable;
 
 namespace MillionAndUp.Data
 {
@@ -36,7 +38,6 @@ namespace MillionAndUp.Data
                 entity.Property(x => x.Birthday)
                 .IsRequired();
             });
-
             modelBuilder.Entity<Property>(entity =>
             {
                 entity.Property(x => x.Name)
@@ -59,7 +60,6 @@ namespace MillionAndUp.Data
                 entity.Property(x => x.Year)
                 .IsRequired();
             });
-
             modelBuilder.Entity<PropertyImage>(entity =>
             {
                 entity.Property(x => x.FilePath)
@@ -70,7 +70,6 @@ namespace MillionAndUp.Data
                 .IsRequired()
                 .HasDefaultValueSql("((1))");
             });
-
             modelBuilder.Entity<PropertyTrace>(entity =>
             {
                 entity.Property(x => x.Name)
@@ -87,7 +86,6 @@ namespace MillionAndUp.Data
                 entity.Property(x => x.Tax)
                 .IsRequired();
             });
-
             modelBuilder.Entity<PropertyTrace>(entity =>
             {
                 entity.Property(x => x.SaleDate)
@@ -96,6 +94,7 @@ namespace MillionAndUp.Data
                 entity.Property(x => x.Value)
                 .IsRequired();
             });
+            modelBuilder.Seed();
         }
         #endregion
     }

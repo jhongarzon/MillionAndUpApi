@@ -13,6 +13,7 @@ namespace MillionAndUp.Data
         public string Name { get; set; }
         public decimal Value { get; set; }
         public decimal Tax { get; set; }
+        public int PropertyId { get; set; }
         public virtual Property Property { get; set; }
     }
 }

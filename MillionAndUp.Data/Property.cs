@@ -20,8 +20,9 @@ namespace MillionAndUp.Data
         public decimal Price { get; set; }
         public string InternalCode { get; set; }
         public int Year { get; set; }
-        public virtual ICollection<PropertyImage> PropertyImages { get; set; }
-        public virtual ICollection<PropertyTrace> PropertyTraces { get; set; }
-        public virtual Owner Owner { get; set; }
+        public ICollection<PropertyImage> PropertyImages { get; set; }
+        public ICollection<PropertyTrace> PropertyTraces { get; set; }
+        public int OwnerId { get; set; }
+        public Owner Owner { get; set; }
     }
 }
