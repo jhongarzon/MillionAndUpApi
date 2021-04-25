@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace MillionAndUp.Data
@@ -14,7 +15,9 @@ namespace MillionAndUp.Data
             PropertyTraces = new HashSet<PropertyTrace>();
 
         }
+        [JsonPropertyName("propertyId")]
         public int PropertyId { get; set; }
+        [JsonPropertyName("name")]
         public string Name { get; set; }
         public string Address { get; set; }
         public decimal Price { get; set; }

@@ -13,10 +13,19 @@ namespace MillionAndUp.Data
         public DbSet<PropertyTrace> PropertyTraces { get; set; }
         public DbSet<User> Users { get; set; }
 
+        public MillionUpDbContext(DbContextOptions<MillionUpDbContext> options)
+            : base(options)
+        {
+        }
+        public MillionUpDbContext()
+        {
+
+        }
+
         #region OnConfiguring
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlite(@"Data Source=./MillionUpDb.db");
+            options.UseSqlite(@"Data Source=MillionUpDb.db");
         }
         #endregion
         #region OnModelCreating
