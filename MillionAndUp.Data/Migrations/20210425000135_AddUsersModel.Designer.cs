@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MillionAndUp.Data;
 
 namespace MillionAndUp.Data.Migrations
 {
     [DbContext(typeof(MillionUpDbContext))]
-    partial class MillionUpDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210425000135_AddUsersModel")]
+    partial class AddUsersModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,82 +50,82 @@ namespace MillionAndUp.Data.Migrations
                         new
                         {
                             OwnerId = 1,
-                            Address = "East",
-                            Birthday = new DateTime(1994, 12, 5, 18, 4, 7, 906, DateTimeKind.Unspecified).AddTicks(3813),
-                            Name = "Afton Heathcote",
-                            Photo = "https://picsum.photos/640/480/?image=524"
+                            Address = "North",
+                            Birthday = new DateTime(1994, 6, 2, 2, 48, 29, 846, DateTimeKind.Unspecified).AddTicks(2571),
+                            Name = "Salvador Leffler",
+                            Photo = "https://picsum.photos/640/480/?image=440"
                         },
                         new
                         {
                             OwnerId = 2,
-                            Address = "East",
-                            Birthday = new DateTime(2012, 5, 16, 15, 3, 48, 524, DateTimeKind.Unspecified).AddTicks(162),
-                            Name = "Shad Shields",
-                            Photo = "https://picsum.photos/640/480/?image=413"
+                            Address = "North",
+                            Birthday = new DateTime(2014, 2, 18, 1, 57, 40, 886, DateTimeKind.Unspecified).AddTicks(8313),
+                            Name = "Araceli Wehner",
+                            Photo = "https://picsum.photos/640/480/?image=642"
                         },
                         new
                         {
                             OwnerId = 3,
                             Address = "West",
-                            Birthday = new DateTime(1995, 4, 2, 1, 31, 34, 125, DateTimeKind.Unspecified).AddTicks(8586),
-                            Name = "Adan Lowe",
-                            Photo = "https://picsum.photos/640/480/?image=554"
+                            Birthday = new DateTime(1997, 4, 6, 15, 33, 42, 267, DateTimeKind.Unspecified).AddTicks(3),
+                            Name = "Jennifer Jerde",
+                            Photo = "https://picsum.photos/640/480/?image=999"
                         },
                         new
                         {
                             OwnerId = 4,
-                            Address = "Northeast",
-                            Birthday = new DateTime(2008, 5, 28, 0, 40, 10, 47, DateTimeKind.Unspecified).AddTicks(1958),
-                            Name = "Constance Hahn",
-                            Photo = "https://picsum.photos/640/480/?image=672"
+                            Address = "East",
+                            Birthday = new DateTime(2011, 4, 3, 11, 50, 48, 416, DateTimeKind.Unspecified).AddTicks(4642),
+                            Name = "Pamela Osinski",
+                            Photo = "https://picsum.photos/640/480/?image=191"
                         },
                         new
                         {
                             OwnerId = 5,
-                            Address = "North",
-                            Birthday = new DateTime(2013, 5, 23, 20, 22, 6, 404, DateTimeKind.Unspecified).AddTicks(1992),
-                            Name = "Alaina Rice",
-                            Photo = "https://picsum.photos/640/480/?image=614"
+                            Address = "Northeast",
+                            Birthday = new DateTime(2016, 6, 7, 22, 41, 26, 184, DateTimeKind.Unspecified).AddTicks(625),
+                            Name = "Braden Zemlak",
+                            Photo = "https://picsum.photos/640/480/?image=619"
                         },
                         new
                         {
                             OwnerId = 6,
-                            Address = "Northwest",
-                            Birthday = new DateTime(2002, 1, 28, 9, 30, 41, 684, DateTimeKind.Unspecified).AddTicks(3425),
-                            Name = "Foster O'Reilly",
-                            Photo = "https://picsum.photos/640/480/?image=6"
+                            Address = "West",
+                            Birthday = new DateTime(2006, 8, 9, 23, 43, 58, 832, DateTimeKind.Unspecified).AddTicks(7930),
+                            Name = "Donnell Carroll",
+                            Photo = "https://picsum.photos/640/480/?image=256"
                         },
                         new
                         {
                             OwnerId = 7,
-                            Address = "Southwest",
-                            Birthday = new DateTime(2011, 10, 23, 8, 46, 38, 176, DateTimeKind.Unspecified).AddTicks(1323),
-                            Name = "Lester Koepp",
-                            Photo = "https://picsum.photos/640/480/?image=311"
+                            Address = "North",
+                            Birthday = new DateTime(1995, 8, 10, 21, 21, 33, 117, DateTimeKind.Unspecified).AddTicks(2855),
+                            Name = "Roy Bayer",
+                            Photo = "https://picsum.photos/640/480/?image=807"
                         },
                         new
                         {
                             OwnerId = 8,
-                            Address = "West",
-                            Birthday = new DateTime(1996, 6, 23, 1, 38, 43, 674, DateTimeKind.Unspecified).AddTicks(3852),
-                            Name = "Ricardo Smith",
-                            Photo = "https://picsum.photos/640/480/?image=173"
+                            Address = "Southeast",
+                            Birthday = new DateTime(2008, 8, 11, 19, 12, 50, 942, DateTimeKind.Unspecified).AddTicks(3126),
+                            Name = "Aurore Oberbrunner",
+                            Photo = "https://picsum.photos/640/480/?image=672"
                         },
                         new
                         {
                             OwnerId = 9,
-                            Address = "Southwest",
-                            Birthday = new DateTime(2002, 8, 5, 9, 49, 2, 736, DateTimeKind.Unspecified).AddTicks(9594),
-                            Name = "Richie Kunze",
-                            Photo = "https://picsum.photos/640/480/?image=511"
+                            Address = "North",
+                            Birthday = new DateTime(2000, 5, 23, 5, 0, 33, 24, DateTimeKind.Unspecified).AddTicks(4541),
+                            Name = "Theodore Schneider",
+                            Photo = "https://picsum.photos/640/480/?image=311"
                         },
                         new
                         {
                             OwnerId = 10,
-                            Address = "East",
-                            Birthday = new DateTime(2015, 4, 24, 10, 40, 2, 292, DateTimeKind.Unspecified).AddTicks(8929),
-                            Name = "Aubree Bashirian",
-                            Photo = "https://picsum.photos/640/480/?image=178"
+                            Address = "Northeast",
+                            Birthday = new DateTime(2014, 4, 27, 1, 28, 45, 408, DateTimeKind.Unspecified).AddTicks(2960),
+                            Name = "Madyson Bechtelar",
+                            Photo = "https://picsum.photos/640/480/?image=909"
                         });
                 });
 
@@ -169,119 +171,119 @@ namespace MillionAndUp.Data.Migrations
                         new
                         {
                             PropertyId = 1,
-                            Address = "North",
-                            InternalCode = "USB",
-                            Name = "Elenora Parker",
-                            OwnerId = 2,
-                            Price = 2016m,
+                            Address = "Southeast",
+                            InternalCode = "THX",
+                            Name = "Andrew Stanton",
+                            OwnerId = 8,
+                            Price = 2015m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 2,
-                            Address = "Southeast",
-                            InternalCode = "RSS",
-                            Name = "Willis Grady",
+                            Address = "Southwest",
+                            InternalCode = "SCSI",
+                            Name = "Skylar Swaniawski",
                             OwnerId = 5,
-                            Price = 2018m,
+                            Price = 2015m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 3,
-                            Address = "East",
-                            InternalCode = "SAS",
-                            Name = "Willard Leannon",
-                            OwnerId = 9,
-                            Price = 2018m,
+                            Address = "Southwest",
+                            InternalCode = "SMS",
+                            Name = "Tom Muller",
+                            OwnerId = 8,
+                            Price = 2016m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 4,
-                            Address = "Northwest",
-                            InternalCode = "EXE",
-                            Name = "Malika Mayer",
-                            OwnerId = 1,
-                            Price = 2019m,
+                            Address = "West",
+                            InternalCode = "ADP",
+                            Name = "Augustine Miller",
+                            OwnerId = 7,
+                            Price = 2020m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 5,
-                            Address = "North",
-                            InternalCode = "HTTP",
-                            Name = "Devonte Nader",
-                            OwnerId = 6,
-                            Price = 2018m,
+                            Address = "Northeast",
+                            InternalCode = "SMS",
+                            Name = "Marcelle Skiles",
+                            OwnerId = 1,
+                            Price = 2020m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 6,
-                            Address = "East",
-                            InternalCode = "PNG",
-                            Name = "Frieda Corwin",
-                            OwnerId = 8,
-                            Price = 2019m,
-                            Year = 0
-                        },
-                        new
-                        {
-                            PropertyId = 7,
                             Address = "South",
-                            InternalCode = "COM",
-                            Name = "Lawson Leffler",
+                            InternalCode = "PNG",
+                            Name = "Brown Beatty",
                             OwnerId = 4,
                             Price = 2020m,
                             Year = 0
                         },
                         new
                         {
-                            PropertyId = 8,
-                            Address = "South",
+                            PropertyId = 7,
+                            Address = "Northwest",
                             InternalCode = "XML",
-                            Name = "Gregory D'Amore",
+                            Name = "Harley Hamill",
                             OwnerId = 7,
-                            Price = 2018m,
+                            Price = 2015m,
+                            Year = 0
+                        },
+                        new
+                        {
+                            PropertyId = 8,
+                            Address = "East",
+                            InternalCode = "SQL",
+                            Name = "Rhiannon Labadie",
+                            OwnerId = 7,
+                            Price = 2017m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 9,
-                            Address = "South",
-                            InternalCode = "XSS",
-                            Name = "Peter Larson",
-                            OwnerId = 8,
+                            Address = "West",
+                            InternalCode = "TCP",
+                            Name = "Lilliana Gleason",
+                            OwnerId = 2,
                             Price = 2019m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 10,
-                            Address = "Southwest",
-                            InternalCode = "HTTP",
-                            Name = "Francesca Lehner",
-                            OwnerId = 4,
-                            Price = 2016m,
-                            Year = 0
-                        },
-                        new
-                        {
-                            PropertyId = 11,
                             Address = "East",
-                            InternalCode = "XSS",
-                            Name = "Americo Hodkiewicz",
-                            OwnerId = 4,
+                            InternalCode = "JBOD",
+                            Name = "Celestino Bradtke",
+                            OwnerId = 9,
                             Price = 2018m,
                             Year = 0
                         },
                         new
                         {
+                            PropertyId = 11,
+                            Address = "Northwest",
+                            InternalCode = "SSL",
+                            Name = "Brook Runolfsson",
+                            OwnerId = 7,
+                            Price = 2019m,
+                            Year = 0
+                        },
+                        new
+                        {
                             PropertyId = 12,
-                            Address = "Southeast",
-                            InternalCode = "SCSI",
-                            Name = "Leta Adams",
+                            Address = "Northwest",
+                            InternalCode = "SMTP",
+                            Name = "Jamarcus Ernser",
                             OwnerId = 8,
                             Price = 2016m,
                             Year = 0
@@ -289,81 +291,81 @@ namespace MillionAndUp.Data.Migrations
                         new
                         {
                             PropertyId = 13,
-                            Address = "Southeast",
-                            InternalCode = "AI",
-                            Name = "Elza Blick",
-                            OwnerId = 8,
-                            Price = 2019m,
+                            Address = "Southwest",
+                            InternalCode = "SSL",
+                            Name = "Marjorie Funk",
+                            OwnerId = 5,
+                            Price = 2015m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 14,
-                            Address = "Southeast",
-                            InternalCode = "GB",
-                            Name = "Amira Dach",
-                            OwnerId = 7,
-                            Price = 2016m,
+                            Address = "North",
+                            InternalCode = "TCP",
+                            Name = "Efren Upton",
+                            OwnerId = 3,
+                            Price = 2017m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 15,
                             Address = "East",
-                            InternalCode = "RSS",
-                            Name = "Joyce Hamill",
-                            OwnerId = 2,
-                            Price = 2020m,
-                            Year = 0
-                        },
-                        new
-                        {
-                            PropertyId = 16,
-                            Address = "North",
-                            InternalCode = "SAS",
-                            Name = "Aileen Durgan",
-                            OwnerId = 6,
-                            Price = 2017m,
-                            Year = 0
-                        },
-                        new
-                        {
-                            PropertyId = 17,
-                            Address = "North",
-                            InternalCode = "GB",
-                            Name = "Cleta Rath",
+                            InternalCode = "COM",
+                            Name = "Joany Boyer",
                             OwnerId = 8,
                             Price = 2016m,
                             Year = 0
                         },
                         new
                         {
-                            PropertyId = 18,
-                            Address = "East",
-                            InternalCode = "USB",
-                            Name = "Darien Rohan",
+                            PropertyId = 16,
+                            Address = "North",
+                            InternalCode = "ADP",
+                            Name = "Cassandre Klocko",
+                            OwnerId = 6,
+                            Price = 2018m,
+                            Year = 0
+                        },
+                        new
+                        {
+                            PropertyId = 17,
+                            Address = "North",
+                            InternalCode = "IB",
+                            Name = "Guido Parisian",
                             OwnerId = 9,
-                            Price = 2016m,
+                            Price = 2019m,
+                            Year = 0
+                        },
+                        new
+                        {
+                            PropertyId = 18,
+                            Address = "South",
+                            InternalCode = "COM",
+                            Name = "Cathryn Hoppe",
+                            OwnerId = 3,
+                            Price = 2020m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 19,
-                            Address = "Southwest",
-                            InternalCode = "JBOD",
-                            Name = "Myles Blanda",
-                            OwnerId = 6,
-                            Price = 2016m,
+                            Address = "Northeast",
+                            InternalCode = "PCI",
+                            Name = "Lucio MacGyver",
+                            OwnerId = 7,
+                            Price = 2015m,
                             Year = 0
                         },
                         new
                         {
                             PropertyId = 20,
-                            Address = "East",
-                            InternalCode = "HDD",
-                            Name = "Wava Emmerich",
-                            OwnerId = 5,
-                            Price = 2018m,
+                            Address = "South",
+                            InternalCode = "CSS",
+                            Name = "Forest Cole",
+                            OwnerId = 4,
+                            Price = 2020m,
                             Year = 0
                         });
                 });
@@ -398,211 +400,211 @@ namespace MillionAndUp.Data.Migrations
                         {
                             PropertyImageId = 1,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=750",
-                            PropertyId = 9
+                            FilePath = "https://picsum.photos/640/480/?image=657",
+                            PropertyId = 8
                         },
                         new
                         {
                             PropertyImageId = 2,
-                            Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=277",
-                            PropertyId = 8
+                            Enabled = false,
+                            FilePath = "https://picsum.photos/640/480/?image=886",
+                            PropertyId = 15
                         },
                         new
                         {
                             PropertyImageId = 3,
-                            Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=373",
-                            PropertyId = 8
+                            Enabled = true,
+                            FilePath = "https://picsum.photos/640/480/?image=560",
+                            PropertyId = 9
                         },
                         new
                         {
                             PropertyImageId = 4,
                             Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=485",
-                            PropertyId = 4
+                            FilePath = "https://picsum.photos/640/480/?image=1071",
+                            PropertyId = 1
                         },
                         new
                         {
                             PropertyImageId = 5,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=744",
-                            PropertyId = 12
+                            FilePath = "https://picsum.photos/640/480/?image=188",
+                            PropertyId = 2
                         },
                         new
                         {
                             PropertyImageId = 6,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=445",
-                            PropertyId = 6
+                            FilePath = "https://picsum.photos/640/480/?image=541",
+                            PropertyId = 1
                         },
                         new
                         {
                             PropertyImageId = 7,
-                            Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=405",
+                            Enabled = false,
+                            FilePath = "https://picsum.photos/640/480/?image=942",
                             PropertyId = 3
                         },
                         new
                         {
                             PropertyImageId = 8,
                             Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=17",
-                            PropertyId = 5
+                            FilePath = "https://picsum.photos/640/480/?image=889",
+                            PropertyId = 10
                         },
                         new
                         {
                             PropertyImageId = 9,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=349",
-                            PropertyId = 3
+                            FilePath = "https://picsum.photos/640/480/?image=774",
+                            PropertyId = 1
                         },
                         new
                         {
                             PropertyImageId = 10,
                             Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=810",
-                            PropertyId = 14
+                            FilePath = "https://picsum.photos/640/480/?image=873",
+                            PropertyId = 17
                         },
                         new
                         {
                             PropertyImageId = 11,
                             Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=1065",
-                            PropertyId = 11
+                            FilePath = "https://picsum.photos/640/480/?image=151",
+                            PropertyId = 4
                         },
                         new
                         {
                             PropertyImageId = 12,
-                            Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=721",
-                            PropertyId = 12
+                            Enabled = true,
+                            FilePath = "https://picsum.photos/640/480/?image=564",
+                            PropertyId = 10
                         },
                         new
                         {
                             PropertyImageId = 13,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=968",
-                            PropertyId = 5
+                            FilePath = "https://picsum.photos/640/480/?image=1063",
+                            PropertyId = 2
                         },
                         new
                         {
                             PropertyImageId = 14,
                             Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=725",
-                            PropertyId = 12
+                            FilePath = "https://picsum.photos/640/480/?image=624",
+                            PropertyId = 18
                         },
                         new
                         {
                             PropertyImageId = 15,
                             Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=198",
-                            PropertyId = 1
+                            FilePath = "https://picsum.photos/640/480/?image=370",
+                            PropertyId = 18
                         },
                         new
                         {
                             PropertyImageId = 16,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=185",
-                            PropertyId = 11
+                            FilePath = "https://picsum.photos/640/480/?image=704",
+                            PropertyId = 2
                         },
                         new
                         {
                             PropertyImageId = 17,
-                            Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=165",
-                            PropertyId = 8
+                            Enabled = true,
+                            FilePath = "https://picsum.photos/640/480/?image=848",
+                            PropertyId = 5
                         },
                         new
                         {
                             PropertyImageId = 18,
-                            Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=830",
-                            PropertyId = 4
+                            Enabled = true,
+                            FilePath = "https://picsum.photos/640/480/?image=1052",
+                            PropertyId = 6
                         },
                         new
                         {
                             PropertyImageId = 19,
-                            Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=1032",
-                            PropertyId = 13
+                            Enabled = true,
+                            FilePath = "https://picsum.photos/640/480/?image=692",
+                            PropertyId = 11
                         },
                         new
                         {
                             PropertyImageId = 20,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=503",
-                            PropertyId = 2
+                            FilePath = "https://picsum.photos/640/480/?image=985",
+                            PropertyId = 16
                         },
                         new
                         {
                             PropertyImageId = 21,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=287",
-                            PropertyId = 17
+                            FilePath = "https://picsum.photos/640/480/?image=750",
+                            PropertyId = 2
                         },
                         new
                         {
                             PropertyImageId = 22,
-                            Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=500",
-                            PropertyId = 16
+                            Enabled = false,
+                            FilePath = "https://picsum.photos/640/480/?image=709",
+                            PropertyId = 7
                         },
                         new
                         {
                             PropertyImageId = 23,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=368",
-                            PropertyId = 11
+                            FilePath = "https://picsum.photos/640/480/?image=959",
+                            PropertyId = 2
                         },
                         new
                         {
                             PropertyImageId = 24,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=388",
-                            PropertyId = 14
-                        },
-                        new
-                        {
-                            PropertyImageId = 25,
-                            Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=64",
-                            PropertyId = 19
-                        },
-                        new
-                        {
-                            PropertyImageId = 26,
-                            Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=726",
-                            PropertyId = 10
-                        },
-                        new
-                        {
-                            PropertyImageId = 27,
-                            Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=509",
+                            FilePath = "https://picsum.photos/640/480/?image=759",
                             PropertyId = 16
                         },
                         new
                         {
-                            PropertyImageId = 28,
+                            PropertyImageId = 25,
+                            Enabled = false,
+                            FilePath = "https://picsum.photos/640/480/?image=805",
+                            PropertyId = 5
+                        },
+                        new
+                        {
+                            PropertyImageId = 26,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=662",
-                            PropertyId = 3
+                            FilePath = "https://picsum.photos/640/480/?image=717",
+                            PropertyId = 16
+                        },
+                        new
+                        {
+                            PropertyImageId = 27,
+                            Enabled = false,
+                            FilePath = "https://picsum.photos/640/480/?image=355",
+                            PropertyId = 17
+                        },
+                        new
+                        {
+                            PropertyImageId = 28,
+                            Enabled = false,
+                            FilePath = "https://picsum.photos/640/480/?image=57",
+                            PropertyId = 19
                         },
                         new
                         {
                             PropertyImageId = 29,
                             Enabled = false,
-                            FilePath = "https://picsum.photos/640/480/?image=761",
-                            PropertyId = 18
+                            FilePath = "https://picsum.photos/640/480/?image=539",
+                            PropertyId = 15
                         },
                         new
                         {
                             PropertyImageId = 30,
                             Enabled = true,
-                            FilePath = "https://picsum.photos/640/480/?image=467",
-                            PropertyId = 9
+                            FilePath = "https://picsum.photos/640/480/?image=646",
+                            PropertyId = 16
                         });
                 });
 
@@ -640,272 +642,272 @@ namespace MillionAndUp.Data.Migrations
                         new
                         {
                             PropertyTraceId = 1,
-                            Name = "Janae Loaf",
-                            PropertyId = 19,
+                            Name = "Devan Islands",
+                            PropertyId = 13,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.8462872979446720m
+                            Value = 0.4575126550428160m
                         },
                         new
                         {
                             PropertyTraceId = 2,
-                            Name = "Beaulah Tunnel",
-                            PropertyId = 11,
+                            Name = "Cassin Green",
+                            PropertyId = 3,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.8091080397409890m
+                            Value = 0.8301512663393060m
                         },
                         new
                         {
                             PropertyTraceId = 3,
-                            Name = "Hettinger Turnpike",
-                            PropertyId = 6,
+                            Name = "Osinski Canyon",
+                            PropertyId = 7,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.5888469776086730m
+                            Value = 0.2389421035716970m
                         },
                         new
                         {
                             PropertyTraceId = 4,
-                            Name = "Kovacek Points",
-                            PropertyId = 17,
+                            Name = "Gunnar Common",
+                            PropertyId = 1,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.581725420701190m
+                            Value = 0.771089599826880m
                         },
                         new
                         {
                             PropertyTraceId = 5,
-                            Name = "Lorena Flat",
-                            PropertyId = 16,
+                            Name = "Ollie Lakes",
+                            PropertyId = 3,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.7511175264376760m
+                            Value = 0.7829831702555450m
                         },
                         new
                         {
                             PropertyTraceId = 6,
-                            Name = "Hills Valley",
-                            PropertyId = 1,
+                            Name = "Lubowitz Way",
+                            PropertyId = 19,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.04110817985660780m
+                            Value = 0.4594430133977170m
                         },
                         new
                         {
                             PropertyTraceId = 7,
-                            Name = "Keshaun Street",
-                            PropertyId = 5,
+                            Name = "Kay Canyon",
+                            PropertyId = 6,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.8892261525100220m
+                            Value = 0.253583771294720m
                         },
                         new
                         {
                             PropertyTraceId = 8,
-                            Name = "Rosenbaum Village",
-                            PropertyId = 13,
+                            Name = "Friesen Ports",
+                            PropertyId = 16,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.2592070448488030m
+                            Value = 0.121412397884490m
                         },
                         new
                         {
                             PropertyTraceId = 9,
-                            Name = "Curtis Burg",
-                            PropertyId = 14,
+                            Name = "Schroeder Walk",
+                            PropertyId = 3,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.7963800364157090m
+                            Value = 0.432398107569850m
                         },
                         new
                         {
                             PropertyTraceId = 10,
-                            Name = "Morar Alley",
+                            Name = "Dietrich Walks",
                             PropertyId = 11,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.2356751990670690m
+                            Value = 0.7582780745617480m
                         },
                         new
                         {
                             PropertyTraceId = 11,
-                            Name = "Katelynn Plaza",
-                            PropertyId = 13,
+                            Name = "Strosin Isle",
+                            PropertyId = 18,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.6964086562844040m
+                            Value = 0.07134133254705990m
                         },
                         new
                         {
                             PropertyTraceId = 12,
-                            Name = "Armand Ridge",
-                            PropertyId = 9,
+                            Name = "Jones Run",
+                            PropertyId = 15,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.9991365442979780m
+                            Value = 0.9226692933229120m
                         },
                         new
                         {
                             PropertyTraceId = 13,
-                            Name = "Barrows Spurs",
-                            PropertyId = 3,
+                            Name = "Earnestine Meadows",
+                            PropertyId = 7,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.06824146866250850m
+                            Value = 0.7239425888862190m
                         },
                         new
                         {
                             PropertyTraceId = 14,
-                            Name = "Marietta Mission",
-                            PropertyId = 9,
+                            Name = "Raphael Isle",
+                            PropertyId = 18,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.8802099259943750m
+                            Value = 0.876573886199190m
                         },
                         new
                         {
                             PropertyTraceId = 15,
-                            Name = "Jacobs Ranch",
-                            PropertyId = 8,
+                            Name = "Tania Knoll",
+                            PropertyId = 2,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.4600264660362280m
+                            Value = 0.2184154746208410m
                         },
                         new
                         {
                             PropertyTraceId = 16,
-                            Name = "Abbey Terrace",
-                            PropertyId = 19,
+                            Name = "Alize Summit",
+                            PropertyId = 3,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.9139938712650880m
+                            Value = 0.3975971869181830m
                         },
                         new
                         {
                             PropertyTraceId = 17,
-                            Name = "Lorenz Glen",
-                            PropertyId = 3,
+                            Name = "Tiana Island",
+                            PropertyId = 9,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.6901753208088570m
+                            Value = 0.5453073845921580m
                         },
                         new
                         {
                             PropertyTraceId = 18,
-                            Name = "Romaine Plaza",
-                            PropertyId = 6,
+                            Name = "Magnolia Springs",
+                            PropertyId = 2,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.6080328284800210m
+                            Value = 0.03393443489164790m
                         },
                         new
                         {
                             PropertyTraceId = 19,
-                            Name = "Yundt Mill",
-                            PropertyId = 5,
+                            Name = "O'Kon Trail",
+                            PropertyId = 16,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.1904735556759280m
+                            Value = 0.8487964569818210m
                         },
                         new
                         {
                             PropertyTraceId = 20,
-                            Name = "Fadel Square",
-                            PropertyId = 8,
+                            Name = "Taurean Plaza",
+                            PropertyId = 4,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.08989608012600620m
+                            Value = 0.6319951087385390m
                         },
                         new
                         {
                             PropertyTraceId = 21,
-                            Name = "Smitham Fort",
-                            PropertyId = 18,
+                            Name = "Cartwright Stravenue",
+                            PropertyId = 14,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.9252294520499320m
+                            Value = 0.7031269100043580m
                         },
                         new
                         {
                             PropertyTraceId = 22,
-                            Name = "Tillman Square",
-                            PropertyId = 8,
+                            Name = "Ward Brook",
+                            PropertyId = 10,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.6223258146188810m
+                            Value = 0.06568253229636820m
                         },
                         new
                         {
                             PropertyTraceId = 23,
-                            Name = "Corkery Forge",
-                            PropertyId = 12,
+                            Name = "Ava Dam",
+                            PropertyId = 9,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.5558681481312350m
+                            Value = 0.08518070033061350m
                         },
                         new
                         {
                             PropertyTraceId = 24,
-                            Name = "Littel Walk",
-                            PropertyId = 8,
+                            Name = "Roob Ranch",
+                            PropertyId = 12,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.2505453029882840m
+                            Value = 0.861998723755590m
                         },
                         new
                         {
                             PropertyTraceId = 25,
-                            Name = "Rath Gateway",
-                            PropertyId = 14,
+                            Name = "Willa Cape",
+                            PropertyId = 16,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.6145707041093010m
+                            Value = 0.9102720054380m
                         },
                         new
                         {
                             PropertyTraceId = 26,
-                            Name = "Abshire Overpass",
-                            PropertyId = 12,
+                            Name = "Clementina Meadows",
+                            PropertyId = 2,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.7852373923106290m
+                            Value = 0.7748858387465060m
                         },
                         new
                         {
                             PropertyTraceId = 27,
-                            Name = "Charlene Lights",
-                            PropertyId = 17,
+                            Name = "Koch Via",
+                            PropertyId = 13,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.4812139009503710m
+                            Value = 0.4437518177757750m
                         },
                         new
                         {
                             PropertyTraceId = 28,
-                            Name = "Emile Crest",
-                            PropertyId = 13,
+                            Name = "Lehner River",
+                            PropertyId = 12,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.3281813153662630m
+                            Value = 0.3593702862781330m
                         },
                         new
                         {
                             PropertyTraceId = 29,
-                            Name = "McGlynn Path",
-                            PropertyId = 5,
+                            Name = "Ole Knoll",
+                            PropertyId = 16,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.428296189023320m
+                            Value = 0.9586703148478040m
                         },
                         new
                         {
                             PropertyTraceId = 30,
-                            Name = "Ward Views",
-                            PropertyId = 2,
+                            Name = "Bryana Points",
+                            PropertyId = 5,
                             SaleDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Tax = 0m,
-                            Value = 0.5298357082204130m
+                            Value = 0.09067324227219130m
                         });
                 });
 
@@ -930,160 +932,6 @@ namespace MillionAndUp.Data.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = 1,
-                            FirstName = "Rosalia",
-                            LastName = "O'Reilly",
-                            Password = "_7Oy0rMQkJ",
-                            Username = "Will.Gulgowski"
-                        },
-                        new
-                        {
-                            UserId = 2,
-                            FirstName = "Elsa",
-                            LastName = "Kihn",
-                            Password = "zSPhigi82P",
-                            Username = "Gladyce_Altenwerth35"
-                        },
-                        new
-                        {
-                            UserId = 3,
-                            FirstName = "Fannie",
-                            LastName = "Koepp",
-                            Password = "Hd8FR5WMee",
-                            Username = "Tomasa39"
-                        },
-                        new
-                        {
-                            UserId = 4,
-                            FirstName = "Destini",
-                            LastName = "Denesik",
-                            Password = "1pPVvRP6E7",
-                            Username = "Gwen.Cummings28"
-                        },
-                        new
-                        {
-                            UserId = 5,
-                            FirstName = "Filomena",
-                            LastName = "Murray",
-                            Password = "P4242p3s5p",
-                            Username = "Marcia.Feil97"
-                        },
-                        new
-                        {
-                            UserId = 6,
-                            FirstName = "Winona",
-                            LastName = "Pfeffer",
-                            Password = "Y7uMCP08Fi",
-                            Username = "Merl.Armstrong"
-                        },
-                        new
-                        {
-                            UserId = 7,
-                            FirstName = "Walker",
-                            LastName = "Boyle",
-                            Password = "NyB9jaS2GX",
-                            Username = "Shayne48"
-                        },
-                        new
-                        {
-                            UserId = 8,
-                            FirstName = "Franz",
-                            LastName = "Mohr",
-                            Password = "4apqL28gnE",
-                            Username = "Tristian_Halvorson70"
-                        },
-                        new
-                        {
-                            UserId = 9,
-                            FirstName = "Justina",
-                            LastName = "Hammes",
-                            Password = "m37pnKFBVY",
-                            Username = "Rhea53"
-                        },
-                        new
-                        {
-                            UserId = 10,
-                            FirstName = "Oral",
-                            LastName = "Spinka",
-                            Password = "2sWdlt9RNj",
-                            Username = "Lois89"
-                        },
-                        new
-                        {
-                            UserId = 11,
-                            FirstName = "Ashton",
-                            LastName = "Lakin",
-                            Password = "MjtXRrjgM2",
-                            Username = "Jaime.Hilpert79"
-                        },
-                        new
-                        {
-                            UserId = 12,
-                            FirstName = "Jarrod",
-                            LastName = "Feest",
-                            Password = "m7u91rrRjr",
-                            Username = "Ludie37"
-                        },
-                        new
-                        {
-                            UserId = 13,
-                            FirstName = "Aylin",
-                            LastName = "Haley",
-                            Password = "GVIqkELDTZ",
-                            Username = "Janet.Runolfsson"
-                        },
-                        new
-                        {
-                            UserId = 14,
-                            FirstName = "Enrique",
-                            LastName = "Lesch",
-                            Password = "faIIz6nDC2",
-                            Username = "Gertrude.Kiehn6"
-                        },
-                        new
-                        {
-                            UserId = 15,
-                            FirstName = "Amara",
-                            LastName = "Funk",
-                            Password = "Fc5vfCCqbj",
-                            Username = "Vicenta_Howell"
-                        },
-                        new
-                        {
-                            UserId = 16,
-                            FirstName = "Syble",
-                            LastName = "Wiegand",
-                            Password = "b0HHD0xX43",
-                            Username = "Ines_Ullrich"
-                        },
-                        new
-                        {
-                            UserId = 17,
-                            FirstName = "Cordia",
-                            LastName = "Veum",
-                            Password = "1x9YuafQed",
-                            Username = "Jace88"
-                        },
-                        new
-                        {
-                            UserId = 18,
-                            FirstName = "Randy",
-                            LastName = "Koepp",
-                            Password = "49Ma6bP0SA",
-                            Username = "Laurine_Block44"
-                        },
-                        new
-                        {
-                            UserId = 19,
-                            FirstName = "Casandra",
-                            LastName = "Kirlin",
-                            Password = "ZmaBUfZoKT",
-                            Username = "Nick34"
-                        });
                 });
 
             modelBuilder.Entity("MillionAndUp.Data.Property", b =>

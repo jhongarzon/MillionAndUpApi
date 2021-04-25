@@ -11,6 +11,7 @@ namespace MillionAndUp.Data
         public DbSet<Property> Properties { get; set; }
         public DbSet<PropertyImage> PropertyImages { get; set; }
         public DbSet<PropertyTrace> PropertyTraces { get; set; }
+        public DbSet<User> Users { get; set; }
 
         #region OnConfiguring
         protected override void OnConfiguring(DbContextOptionsBuilder options)

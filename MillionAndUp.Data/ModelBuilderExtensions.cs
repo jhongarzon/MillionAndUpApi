@@ -25,6 +25,8 @@ namespace MillionAndUp.Data
 
             var propertyTrace = CreatePropertyTraces(properties, random);
             modelBuilder.Entity<PropertyTrace>().HasData(propertyTrace);
+            var users = CreateUsers();
+            modelBuilder.Entity<User>().HasData(users);
         }
 
         private static Owner[] CreateOwners()
@@ -74,6 +76,19 @@ namespace MillionAndUp.Data
             .RuleFor(x => x.Value, f => f.Random.Decimal());
 
             return faker.Generate(30).ToArray();
+        }
+        private static User[] CreateUsers()
+        {
+            int i = 1;
+
+            var faker = new Faker<User>()
+            .RuleFor(x => x.UserId, f => i++)
+            .RuleFor(x => x.FirstName, f => f.Name.FirstName())
+            .RuleFor(x => x.LastName, f => f.Name.LastName())
+            .RuleFor(x => x.Username, f => f.Internet.UserName())
+            .RuleFor(x => x.Password, f => f.Internet.Password());
+
+            return faker.Generate(19).ToArray();
         }
     }
 }
