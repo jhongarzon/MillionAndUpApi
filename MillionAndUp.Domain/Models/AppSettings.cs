@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MillionAndUp.Api.Helpers
+namespace MillionAndUp.Domain.Models
 {
     public class AppSettings
     {

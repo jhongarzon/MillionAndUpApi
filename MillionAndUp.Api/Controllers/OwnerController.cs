@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MillionAndUp.Data;
 using MillionAndUp.Domain.Services;
 using System;
@@ -10,6 +11,7 @@ namespace MillionAndUp.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class OwnerController : Controller
     {
         private readonly IOwnerService _ownerService;
