@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace MillionAndUp.Domain.Services
 {
-    public interface IUserService
+    public interface IPropertyService
     {
-        User GetById(int userId);
-        IEnumerable<User> GetAll();
+        IEnumerable<Property> GetProperties();
+        IEnumerable<Property> GetPropertiesByOwner(Owner owner);
+        Property GetPropertyById(int propertyId);
     }
 }

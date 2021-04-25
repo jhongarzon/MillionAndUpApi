@@ -7,21 +7,21 @@ using System.Threading.Tasks;
 
 namespace MillionAndUp.Domain.Services
 {
-    public class UserService : IUserService
+    public class OwnerService : IOwnerService
     {
         private readonly MillionUpDbContext _context;
-        public UserService()
+        public OwnerService()
         {
             _context = new MillionUpDbContext();
         }
-        public IEnumerable<User> GetAll()
+        public Owner GetOwnerById(int ownerId)
         {
-            return _context.Users;
+            return _context.Owners.Find(ownerId);
         }
 
-        public User GetById(int userId)
+        public IEnumerable<Owner> GetOwners()
         {
-            return _context.Users.Find(userId);
+            return _context.Owners;
         }
     }
 }
